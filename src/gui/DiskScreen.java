@@ -193,7 +193,7 @@ public class DiskScreen extends JFrame {
         }
         int total = DiskMetrics.totalHeadMovement(path);
         summaryArea.setText(
-                "Seek sequence: " + sequence + "\n"
+                "Seek path: " + sequence + "\n"
               + "Total head movement   = " + total + " cylinders\n"
               + String.format("Average seek distance = %d / %d = %.2f cylinders%n",
                         total, numberOfRequests, DiskMetrics.averageSeekDistance(path, numberOfRequests))
